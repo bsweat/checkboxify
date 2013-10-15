@@ -3,7 +3,7 @@ checkboxify
 
 ####Anchor becomes your checkbox, with three states instead of two. Including a "-", indicating without.
 
-You can default classes by adding .check, or .without by default. Clicking will toggle through
+You can default classes by adding .check, or .without by default and clicking will toggle from checked to without to empty.
 
 There is a callback on state change, with a parameter letting you know what the current state is... either "empty", "check", or "without".
 
