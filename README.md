@@ -1,7 +1,7 @@
 checkboxify
 ===========
 
-#Anchor becomes your checkbox, with three states instead of two. Including a "-", indicating without.
+####Anchor becomes your checkbox, with three states instead of two. Including a "-", indicating without.
 
 You can default classes by adding .check, or .without by default. Clicking will toggle through
 
