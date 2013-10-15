@@ -1,0 +1,52 @@
+@import "compass/css3";
+
+.c-box {
+  display:block;
+  font-family:helvetica, sans-serif;
+  position:relative;
+  @include border-radius(3px);
+  @include background-image(linear-gradient(bottom, #eee, #fff));
+  width:11px;
+  height:11px;
+  float:left;
+  cursor:pointer;
+  border:1px solid #aaa;
+  margin:4px 6px 4px 2px;
+
+  span.check-box {
+    display:none;
+    width:11px;
+    color:#000;
+    height:11px;
+    font-size:17px;
+    line-height: 7px;
+    margin-left:1px;
+  }
+
+  span.minus {
+    display:none;
+    line-height: 8px;
+    color:#000;
+    font-size:21px;
+    margin-left:2px;
+  }
+
+  &.check {
+    @include background-image(linear-gradient(bottom, #73a6ca, #b8dcf5));
+    .check-box{
+      display:block;
+    }
+    .minus{
+      display:none;
+    }
+  }
+  &.without {
+    @include background-image(linear-gradient(bottom, #73a6ca, #b8dcf5));
+    .check-box {
+      display:none;
+    }
+    .minus {
+      display:block;
+    }
+  }
+}
